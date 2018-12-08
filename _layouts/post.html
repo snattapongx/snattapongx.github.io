@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<header>
+	<h2>{{ page.title }}</h2>
+	<address class="author">
+		{% if page.author %}<i class="user icon"></i> {{ page.author }}{% endif %}
+	</address>
+	<time pubdate>
+		<i class="clock icon"></i> {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
+	</time>
+</header>
+
+<div class="content">
+	{{ content }}
+</div>

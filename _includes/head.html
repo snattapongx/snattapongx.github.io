@@ -1,0 +1,19 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
+	<script src="{{ "/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/jquery.touchSwipe.min.js" | prepend: site.baseurl }}"></script>
+	<script id="facebook-jssdk" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.12&appId=1189419724452843&autoLogAppEvents=1"></script>
+	<script src="{{ "/js/script.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5aa56cd4626c7b0013d80f2f&product=inline-share-buttons"></script>
+
+</head>

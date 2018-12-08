@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+	<div class="overlay"></div>
+	<div class="swipe-area"></div>
+	<div class="wrapper">
+		{% include header.html %}
+		<main>
+			<article>
+				{{ content }}
+			</article>
+			{% include footer.html %}
+		</main>
+	</div>
+</body>
+
+</html>
